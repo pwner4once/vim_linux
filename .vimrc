@@ -1,5 +1,5 @@
 "Set font.. 
-"set gfn=Monaco\ 10
+set guifont=Monaco:h12
 
 " This must be first, because it changes other options as side effect
 set nocompatible
