@@ -162,7 +162,7 @@ nmap ,cw :CompView<CR>
 nmap ,b :BufExplorerHorizontalSplit<CR>
 
 "match current directory of vim to current file
-autocmd BufEnter * lcd%:p:h
+"autocmd BufEnter * lcd%:p:h
 
 
 "Set *.t file to have perl syntax highlight feature
