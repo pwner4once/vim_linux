@@ -67,7 +67,7 @@ filetype indent on
 
 " Enable Syntax Highlighting
 if &t_Co >= 256 || has("gui_running")
-   colorscheme fu
+   colorscheme desert
 endif
 
 if &t_Co > 2 || has("gui_running")
