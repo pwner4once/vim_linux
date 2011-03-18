@@ -66,9 +66,9 @@ filetype plugin on
 filetype indent on
 
 " Enable Syntax Highlighting
-if &t_Co >= 256 || has("gui_running")
+"if &t_Co >= 256 || has("gui_running")
    colorscheme desert
-endif
+"endif
 
 if &t_Co > 2 || has("gui_running")
    " switch syntax highlighting on, when the terminal has colors
