@@ -84,14 +84,16 @@ autocmd filetype html,xml set listchars-=tab:>.
 set pastetoggle=<F2>
 
 "Shortcut Mapping
-  nnoremap ; :
-  "new tab with old content in old tab
-  imap ,t <Esc>:enew<CR>:split<CR>:bn<CR><C-W><C-W>
-  "Local Variable Renaming
-  nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
+nnoremap ; :
+
+"new tab with old content in old tab
+imap ,t <Esc>:enew<CR>:split<CR>:bn<CR><C-W><C-W>
+
+"Local Variable Renaming
+nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
 
 ""Global Variable Renaming
-"nnoremap gR gD:%s/<C-R>///gc<left><left><left>
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 " Use Q for formatting the current paragraph (or selection)
 vmap Q gq
@@ -196,5 +198,3 @@ set bufhidden=hide
 "Have 3 lines of offset (or buffer) when scrolling
 set scrolloff=3
 
-"Local Variable Renaming
-nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
