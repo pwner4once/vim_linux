@@ -17,11 +17,13 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 let mapleader=","
 
 " GUI
-set cursorline cursorcolumn
+  " cursor highlightning stuff
+  set cursorline cursorcolumn
+  hi clear cursorline
+  hi cursorline cterm=NONE ctermbg=6 guibg=#66ccff
+  hi cursorcolumn cterm=NONE ctermbg=6 guibg=#66ccff
+
 set guioptions-=T " get rid of Toolbars at top
-set cursorline
-hi cursorline guibg=#bf4d36
-hi cursorcolumn guibg=#bf4d36
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 set nowrap        " don't wrap lines
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
