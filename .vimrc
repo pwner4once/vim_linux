@@ -17,11 +17,6 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 let mapleader=","
 
 " GUI
-  " cursor highlightning stuff
-  set cursorline cursorcolumn
-  hi clear cursorline
-  hi cursorline cterm=NONE ctermbg=6 guibg=#66ccff
-  hi cursorcolumn cterm=NONE ctermbg=6 guibg=#66ccff
 
 set guioptions-=T " get rid of Toolbars at top
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
@@ -67,10 +62,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" Enable Syntax Highlighting
-"if &t_Co >= 256 || has("gui_running")
-   colorscheme desert
-"endif
 
 if &t_Co > 2 || has("gui_running")
    " switch syntax highlighting on, when the terminal has colors
@@ -94,7 +85,7 @@ imap ,t <Esc>:enew<CR>:split<CR>:bn<CR><C-W><C-W>
 "Local Variable Renaming
 nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
 
-""Global Variable Renaming
+"Global Variable Renaming
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 " Use Q for formatting the current paragraph (or selection)
@@ -114,7 +105,6 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
 
 nmap <silent> ,/ :let @/=""<CR>
 
@@ -154,8 +144,7 @@ let NERDTreeQuitOnOpen=1
 " Highlight the selected entry in the tree
 let NERDTreeHighlightCursorline=1
 
-" Use a single click to fold/unfold directories and a double click to open
-" files
+" Use a single click to fold/unfold directories and a double click to open files
 let NERDTreeMouseMode=2
 
 " Don't display these kinds of files
@@ -168,19 +157,16 @@ nmap ,b :BufExplorerHorizontalSplit<CR>
 "match current directory of vim to current file
 "autocmd BufEnter * lcd%:p:h
 
-
 "Set *.t file to have perl syntax highlight feature
 au BufNewFile,BufRead *.t set filetype=perl
 au BufNewFile,BufRead *.vs set filetype=verilog
 
 "new tab with old content in old tab
-"imap ,t <Esc>:enew<CR>:split<CR>:bn<CR><C-W><C-W>
-
+imap ,t <Esc>:enew<CR>:split<CR>:bn<CR><C-W><C-W>
 
 "Shortcut to auto indent entire file
 nmap <F11> 1G=G
 imap <F11> <ESC>1G=Ga
-
 
 "Informative status line
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
@@ -189,14 +175,23 @@ set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
 set foldenable
 set fdm=manual
 
-
 "Set space to toggle a fold
 nnoremap <space> za
-
 
 "Hide buffer when not in window (to prevent relogin with FTP edit)
 set bufhidden=hide
 
 "Have 3 lines of offset (or buffer) when scrolling
 set scrolloff=3
+
+" Enable Syntax Highlighting
+"if &t_Co >= 256 || has("gui_running")
+  colorscheme desert
+"endif
+
+" cursor highlightning stuff
+set cursorline cursorcolumn
+hi clear cursorline
+hi cursorline cterm=NONE ctermbg=1 guibg=#66ccff
+hi cursorcolumn cterm=NONE ctermbg=1 guibg=#66ccff
 
