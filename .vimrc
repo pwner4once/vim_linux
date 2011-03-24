@@ -192,6 +192,6 @@ set scrolloff=3
 " cursor highlightning stuff
 set cursorline cursorcolumn
 hi clear cursorline
-hi cursorline cterm=NONE ctermbg=1 guibg=#66ccff
-hi cursorcolumn cterm=NONE ctermbg=1 guibg=#66ccff
+hi cursorline cterm=NONE ctermbg=1 guibg=#414141
+hi cursorcolumn cterm=NONE ctermbg=1 guibg=#414141
 
