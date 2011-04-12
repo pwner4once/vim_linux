@@ -160,6 +160,7 @@ nmap ,b :BufExplorerHorizontalSplit<CR>
 "Set *.t file to have perl syntax highlight feature
 au BufNewFile,BufRead *.t set filetype=perl
 au BufNewFile,BufRead *.vs set filetype=verilog
+au BufNewFile,BufRead *.pde set filetype=cpp
 
 "new tab with old content in old tab
 imap ,t <Esc>:enew<CR>:split<CR>:bn<CR><C-W><C-W>
