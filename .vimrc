@@ -196,3 +196,5 @@ hi clear cursorline
 hi cursorline cterm=NONE ctermbg=1 guibg=#414141
 hi cursorcolumn cterm=NONE ctermbg=1 guibg=#414141
 
+"LustJuggler
+nnoremap <leader>f :LustyJuggler<cr>
