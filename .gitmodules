@@ -1,18 +1,18 @@
 [submodule "bundle/speeddating"]
 	path = bundle/speeddating
-	url = https://github.com/tpope/vim-speeddating.git
+	url = git://github.com/tpope/vim-speeddating.git
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
-	url = https://github.com/Rip-Rip/clang_complete.git
+	url = git://github.com/Rip-Rip/clang_complete.git
 [submodule "supertab"]
 	path = supertab
-	url = https://github.com/ervandew/supertab.git
+	url = git://github.com/ervandew/supertab.git
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
+	url = git://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/sparkfun"]
 	path = bundle/sparkfun
-	url = https://github.com/bingaman/vim-sparkup.git
+	url = git://github.com/bingaman/vim-sparkup.git
 [submodule "bundle/lusty"]
 	path = bundle/lusty
-	url = https://github.com/sjbach/lusty.git
+	url = git://github.com/sjbach/lusty.git
