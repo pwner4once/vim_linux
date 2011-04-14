@@ -198,3 +198,6 @@ hi cursorcolumn cterm=NONE ctermbg=1 guibg=#414141
 
 "LustJuggler
 nnoremap <leader>f :LustyJuggler<cr>
+
+"LustyExplorer's complain..
+set hidden
