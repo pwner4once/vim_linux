@@ -112,7 +112,7 @@ cmap w!! w !sudo tee % >/dev/null
 
 " Plugin related options
 nmap ,n :NERDTreeClose<CR>:NERDTreeToggle<CR>
-nmap ,m :NERDTreeClose<CR>:NERDTreeFind<CR>
+"nmap ,m :NERDTreeClose<CR>:NERDTreeFind<CR>
 nmap ,N :NERDTreeClose<CR>
 map ,T :TlistToggle<CR>
 
@@ -201,3 +201,10 @@ nnoremap <leader>f :LustyJuggler<cr>
 
 "LustyExplorer's complain..
 set hidden
+
+"EasyMotion leader conflicts with command-t
+let g:EasyMotion_leader_key = '<Leader>m'
+
+"csstidy
+autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true 
+
