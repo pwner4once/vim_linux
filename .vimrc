@@ -48,8 +48,6 @@ set tabstop=2 "set tab character to 4 characters
 set expandtab "turn tabs into whitespace
 set shiftwidth=2 "indent width for autoindent
 
-
-
 " File saving
 set nobackup
 set noswapfile
@@ -62,7 +60,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
-
 if &t_Co > 2 || has("gui_running")
    " switch syntax highlighting on, when the terminal has colors
    syntax on
@@ -74,7 +71,7 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 autocmd filetype html,xml set listchars-=tab:>.
 
 "Pasting large amounts of text into Vim
-set pastetoggle=<F2>
+set pastetoggle=<F3>
 
 "Shortcut Mapping
 nnoremap ; :
@@ -173,8 +170,10 @@ imap <F11> <ESC>1G=Ga
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
 
 "Enable indent folding
-set foldenable
-set fdm=manual
+set nofoldenable
+set fdm=indent
+set foldnestmax=10
+set foldlevel=1
 
 "Set space to toggle a fold
 nnoremap <space> za
@@ -187,11 +186,11 @@ set scrolloff=3
 
 " Enable Syntax Highlighting
 "if &t_Co >= 256 || has("gui_running")
-  colorscheme desert
+  colorscheme jellybeans
 "endif
 
 " cursor highlightning stuff
-set cursorline cursorcolumn
+"set cursorline cursorcolumn
 hi clear cursorline
 hi cursorline cterm=NONE ctermbg=1 guibg=#414141
 hi cursorcolumn cterm=NONE ctermbg=1 guibg=#414141
@@ -203,8 +202,13 @@ nnoremap <leader>f :LustyJuggler<cr>
 set hidden
 
 "EasyMotion leader conflicts with command-t
-let g:EasyMotion_leader_key = '<Leader>m'
+let g:EasyMotion_mapping_gE  = ''
+let g:EasyMotion_mapping_t  = ''
+let g:EasyMotion_mapping_f  = ''
+nmap ,cw :CompView<CR>
 
 "csstidy
 autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true 
 
+"mute visual bell
+set visualbell t_vb=
