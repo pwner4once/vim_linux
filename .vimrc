@@ -186,7 +186,7 @@ set scrolloff=3
 
 " Enable Syntax Highlighting
 "if &t_Co >= 256 || has("gui_running")
-  colorscheme jellybeans
+  colorscheme desert
 "endif
 
 " cursor highlightning stuff
