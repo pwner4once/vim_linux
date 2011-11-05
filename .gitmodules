@@ -4,12 +4,9 @@
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
 	url = git://github.com/Rip-Rip/clang_complete.git
-[submodule "supertab"]
-	path = supertab
+[submodule "bundle/supertab"]
+	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "bundle/easymotion"]
-	path = bundle/easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/sparkfun"]
 	path = bundle/sparkfun
 	url = git://github.com/bingaman/vim-sparkup.git
@@ -18,7 +15,13 @@
 	url = git://github.com/sjbach/lusty.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
+	url = git://github.com/godlygeek/tabular.git
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/OmniCppComplete"]
+	path = bundle/OmniCppComplete
+	url = git://github.com/vim-scripts/OmniCppComplete.git
+[submodule "bundle/mark"]
+	path = bundle/mark
+	url = https://github.com/vim-scripts/Mark--Karkat.git

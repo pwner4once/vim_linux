@@ -20,7 +20,7 @@ let mapleader=","
 
 set guioptions-=T " get rid of Toolbars at top
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
-set nowrap        " don't wrap lines
+"set nowrap        " don't wrap lines
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
@@ -66,7 +66,7 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 "Change editing behavior
-set list
+"set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 autocmd filetype html,xml set listchars-=tab:>.
 
@@ -148,7 +148,6 @@ let NERDTreeMouseMode=2
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
             \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
 
-nmap ,cw :CompView<CR>
 nmap ,b :BufExplorerHorizontalSplit<CR>
 
 "match current directory of vim to current file
@@ -185,9 +184,9 @@ set bufhidden=hide
 set scrolloff=3
 
 " Enable Syntax Highlighting
-"if &t_Co >= 256 || has("gui_running")
+if &t_Co >= 256 || has("gui_running")
   colorscheme desert
-"endif
+endif
 
 " cursor highlightning stuff
 "set cursorline cursorcolumn
@@ -197,18 +196,31 @@ hi cursorcolumn cterm=NONE ctermbg=1 guibg=#414141
 
 "LustJuggler
 nnoremap <leader>f :LustyJuggler<cr>
-
-"LustyExplorer's complain..
 set hidden
-
-"EasyMotion leader conflicts with command-t
-let g:EasyMotion_mapping_gE  = ''
-let g:EasyMotion_mapping_t  = ''
-let g:EasyMotion_mapping_f  = ''
-nmap ,cw :CompView<CR>
 
 "csstidy
 autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true 
 
 "mute visual bell
 set visualbell t_vb=
+
+" clang_complete configs
+
+
+" Tab functionality
+function! SuperCleverTab()
+  if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
+      return "\<Tab>"
+  else
+      if &omnifunc != ''
+          return "\<C-X>\<C-O>"
+      elseif &dictionary != ''
+          return "\<C-K>"
+      else
+          return "\<C-N>"
+      endif
+  endif
+endfunction
+
+inoremap <Tab> <C-R>=SuperCleverTab()<cr>
+
