@@ -1,5 +1,5 @@
 "Set font.. 
-set guifont=Monaco:h12
+"set guifont=Verdana\ 12
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -44,9 +44,10 @@ set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)] "Informative statu
 "Smart indentation
 set cindent
 set smartindent
-set tabstop=2 "set tab character to 4 characters
-set expandtab "turn tabs into whitespace
-set shiftwidth=2 "indent width for autoindent
+set tabstop=4 "set tab character to 4 characters
+set noexpandtab "turn tabs into whitespace
+set shiftwidth=4 "indent width for autoindent
+set textwidth=78 "Screen in 80 columns wide, wrap at 78
 
 " File saving
 set nobackup
@@ -58,7 +59,7 @@ au BufNewFile,BufRead *.t set filetype=perl
 " set filetype stuff to on
 filetype on
 filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 if &t_Co > 2 || has("gui_running")
    " switch syntax highlighting on, when the terminal has colors
@@ -193,6 +194,8 @@ endif
 hi clear cursorline
 hi cursorline cterm=NONE ctermbg=1 guibg=#414141
 hi cursorcolumn cterm=NONE ctermbg=1 guibg=#414141
+syn match ErrorLeadSpace /^ \+/         " highlight any leading spaces
+syn match ErrorTailSpace / \+$/         " highlight any trailing spaces
 
 "LustJuggler
 nnoremap <leader>f :LustyJuggler<cr>
@@ -224,3 +227,4 @@ endfunction
 
 inoremap <Tab> <C-R>=SuperCleverTab()<cr>
 
+set foldmethod=manual
