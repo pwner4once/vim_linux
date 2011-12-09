@@ -45,7 +45,6 @@ set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)] "Informative statu
 set cindent
 set smartindent
 set tabstop=4 "set tab character to 4 characters
-set noexpandtab "turn tabs into whitespace
 set shiftwidth=4 "indent width for autoindent
 set textwidth=78 "Screen in 80 columns wide, wrap at 78
 
@@ -171,8 +170,8 @@ set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
 
 "Enable indent folding
 set nofoldenable
-set fdm=indent
-set foldnestmax=10
+set fdm=manual
+set foldnestmax=3
 set foldlevel=1
 
 "Set space to toggle a fold
@@ -227,4 +226,3 @@ endfunction
 
 inoremap <Tab> <C-R>=SuperCleverTab()<cr>
 
-set foldmethod=manual
