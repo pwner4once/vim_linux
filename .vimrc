@@ -66,7 +66,7 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 "Change editing behavior
-"set list
+set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 autocmd filetype html,xml set listchars-=tab:>.
 
