@@ -22,6 +22,6 @@
 [submodule "bundle/OmniCppComplete"]
 	path = bundle/OmniCppComplete
 	url = git://github.com/vim-scripts/OmniCppComplete.git
-;[submodule "bundle/mark"]
-	;path = bundle/mark
-	;url = git://github.com/vim-scripts/Mark--Karkat.git
+[submodule "bundle/mark"]
+	path = bundle/mark
+	url = git://github.com/vim-scripts/Mark--Karkat.git
