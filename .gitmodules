@@ -25,3 +25,6 @@
 [submodule "bundle/mark"]
 	path = bundle/mark
 	url = git://github.com/vim-scripts/Mark--Karkat.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
