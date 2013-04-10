@@ -111,7 +111,7 @@ cmap w!! w !sudo tee % >/dev/null
 nmap ,n :NERDTreeClose<CR>:NERDTreeToggle<CR>
 "nmap ,m :NERDTreeClose<CR>:NERDTreeFind<CR>
 nmap ,N :NERDTreeClose<CR>
-map ,T :TlistToggle<CR>
+map ,T :TagbarToggle<CR>
 
 " Store the bookmarks file
 let NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
