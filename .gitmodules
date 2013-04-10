@@ -28,3 +28,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "bundle/perforce"]
+	path = bundle/perforce
+	url = git@github.com:pwner4once/perforce.vim.git
