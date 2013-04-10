@@ -35,6 +35,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 set novisualbell           " don't beep
 set noerrorbells         " don't beep
+set expandtab
 set smarttab             " insert tabs on the start of a line according to
                          "    shiftwidth, not tabstop
 set hlsearch             " highlight search terms
