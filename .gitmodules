@@ -24,7 +24,7 @@
 	url = git://github.com/vim-scripts/OmniCppComplete.git
 [submodule "bundle/mark"]
 	path = bundle/mark
-	url = git://github.com/vim-scripts/Mark--Karkat.git
+	url = git@github.com:pwner4once/Mark--Karkat.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
