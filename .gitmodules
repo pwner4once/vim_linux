@@ -31,3 +31,6 @@
 [submodule "bundle/perforce"]
 	path = bundle/perforce
 	url = git@github.com:pwner4once/perforce.vim.git
+[submodule "bundle/autoload_cscope"]
+	path = bundle/autoload_cscope
+	url = git://github.com/vim-scripts/autoload_cscope.vim.git
