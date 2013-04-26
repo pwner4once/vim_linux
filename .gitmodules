@@ -37,3 +37,6 @@
 [submodule "bundle/autoload_cscope"]
 	path = bundle/autoload_cscope
 	url = git://github.com/vim-scripts/autoload_cscope.vim.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
