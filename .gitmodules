@@ -34,3 +34,6 @@
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/autoload_cscope"]
+	path = bundle/autoload_cscope
+	url = git://github.com/vim-scripts/autoload_cscope.vim.git
