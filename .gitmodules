@@ -31,3 +31,6 @@
 [submodule "bundle/perforce"]
 	path = bundle/perforce
 	url = git@github.com:pwner4once/perforce.vim.git
+[submodule "bundle/easymotion"]
+	path = bundle/easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
