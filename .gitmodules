@@ -6,7 +6,7 @@
 	url = git://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
+	url = git@github.com:ervandew/supertab.git
 [submodule "bundle/sparkfun"]
 	path = bundle/sparkfun
 	url = git://github.com/bingaman/vim-sparkup.git
